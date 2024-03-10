@@ -245,7 +245,7 @@ header #naVmoblie,#delList{
     }
 
     img{
-        width: 350px;
+        width: 500px;
         position: static;
     }
 }
@@ -632,6 +632,10 @@ header #naVmoblie,#delList{
 
     #about {
         margin-top: 5rem;
+
+        img{
+          width: 350px;
+        }
     }
     
     #clients img  {
