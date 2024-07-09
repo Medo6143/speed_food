@@ -1,119 +1,127 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style for project  -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- the logo -->
-    <link rel="shortcut icon" type="image/x-icon" href="https://webdesignmastery.github.io/Foodman_17-02-24/assets/chef.png" />
-    <!-- library for icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Speed Food</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style for project  -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- the logo -->
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://webdesignmastery.github.io/Foodman_17-02-24/assets/chef.png" />
+  <!-- library for icon  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Speed Food</title>
 </head>
+
 <body>
-    <!-- Creat The Navbar -->
-    <header>
-        <h1>Speed <span>Food</span></h1>
-        <nav>
-           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Special</a></li>
-            <li><a href="#">Chif</a></li>
-            <li><a href="#">Clints</a></li>
-            <li><a href="#">Contact Us</a></li>
-           </ul>
-        </nav>
-        <p><i class="fa-solid fa-bag-shopping"></i></i></p> 
-        <span id="naVmoblie"><i class="fa-solid fa-bars"></i></span>
-        <span id="delList"><i class="fa-regular fa-x"></i></span>
-    </header>
-    <ul id="list_mobile" >
+  <!-- Creat The Navbar -->
+  <header>
+    <h1>Speed <span>Food</span></h1>
+    <nav>
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Special</a></li>
         <li><a href="#">Chif</a></li>
         <li><a href="#">Clints</a></li>
         <li><a href="#">Contact Us</a></li>
-    </ul>
+      </ul>
+    </nav>
+    <p><i class="fa-solid fa-bag-shopping"></i></i></p>
+    <span id="naVmoblie"><i class="fa-solid fa-bars"></i></span>
+    <span id="delList"><i class="fa-regular fa-x"></i></span>
+  </header>
+  <ul id="list_mobile">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Special</a></li>
+    <li><a href="#">Chif</a></li>
+    <li><a href="#">Clints</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
 
-    <script>
-        let button = document.querySelector("#naVmoblie")
-        button.addEventListener("click",list)
-        function list(){
-            document.querySelector("#list_mobile").style.display = "flex"
-            document.querySelector("#delList").style.display = "flex"
-            button.style.display="none"
+  <script>
+    let button = document.querySelector("#naVmoblie")
+    button.addEventListener("click", list)
+    function list() {
+      document.querySelector("#list_mobile").style.display = "flex"
+      document.querySelector("#delList").style.display = "flex"
+      button.style.display = "none"
     }
 
-    document.querySelector("#delList").addEventListener("click",del_list)
-    function del_list(){
-        document.querySelector("#delList").style.display="none"
-        document.querySelector("#list_mobile").style.display="none"
-        button.style.display="flex"
+    document.querySelector("#delList").addEventListener("click", del_list)
+    function del_list() {
+      document.querySelector("#delList").style.display = "none"
+      document.querySelector("#list_mobile").style.display = "none"
+      button.style.display = "flex"
     }
   </script>
 
   <main>
-    <section id="home" >
-        <div class="home__image">
-            <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/header.png"  alt="header" />
-          </div>
-          <div class="home__content">
-            <h1>Meet, Eat & Enjoy The <span>True Taste</span>.</h1>
-            <p class="section__description">
-              Discover the true essence of culinary delight as you meet, eat, and
-              savor the authentic flavors that define our passion for food.
-            </p>
-            <div class="home__btn">
-              <button class="btn">Get Started</button>
-            </div>
-          </div>
+    <section id="home">
+      <div class="home__image">
+        <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/header.png" alt="header" />
+      </div>
+      <div class="home__content">
+        <h1>Meet, Eat & Enjoy The <span>True Taste</span>.</h1>
+        <p class="section__description">
+          Discover the true essence of culinary delight as you meet, eat, and
+          savor the authentic flavors that define our passion for food.
+        </p>
+        <div class="home__btn">
+          <button class="btn">Get Started</button>
+        </div>
+      </div>
     </section>
 
     <section id="our__dish">
       <div class="description">
         <h1>Our Special Dish</h1>
-        <p>Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your senses. </p>
+        <p>Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your
+          senses. </p>
       </div>
       <div class="dishes">
-        
-      <div class="dish">
-        <figure>
-          <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-1.png" alt="/">
-        </figure>
-        <figcaption>
-          <h1>Chicken Veg Curry</h1>
-          <p>Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.</p>
-        </figcaption>
-        <div class="buy">
-          <P>12.00$</P>
-          <button>Add Cart</button>
+
+        <div class="dish">
+          <figure>
+            <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-1.png" alt="/">
+          </figure>
+          <figcaption>
+            <h1>Chicken Veg Curry</h1>
+            <p>Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans
+              for a hearty, flavorful dish.</p>
+          </figcaption>
+          <div class="buy">
+            <P>12.00$</P>
+            <button>Add Cart</button>
+          </div>
         </div>
-      </div>      <div class="dish">
-        <figure>
-          <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-2.png  " alt="/">
-        </figure>
-        <figcaption>
-          <h1>Chicken Veg Stir-Fry</h1>
-          <p>Tender chicken strips wok-tossed with a colorful array of fresh vegetables in a flavorful blend of spices and sauces. </p>
-        </figcaption>
-        <div class="buy">
-          <P>19.00$</P>
-          <button>Add Cart</button>
+        <div class="dish">
+          <figure>
+            <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-2.png  " alt="/">
+          </figure>
+          <figcaption>
+            <h1>Chicken Veg Stir-Fry</h1>
+            <p>Tender chicken strips wok-tossed with a colorful array of fresh vegetables in a flavorful blend of spices
+              and sauces. </p>
+          </figcaption>
+          <div class="buy">
+            <P>19.00$</P>
+            <button>Add Cart</button>
+          </div>
         </div>
-      </div>
-      <div class="dish">
-        <figure>
-          <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-1.png" alt="/">
-        </figure>
-        <figcaption>
-          <h1>Chicken Veg Pasta          </h1>
-          <p>Al dente pasta tossed with chicken strips and a mix of vibrant vegetables in a creamy garlic herb sauce, offering a delightful pasta experience.</p>
-        </figcaption>
-        <div class="buy">
-          <P>15.00$</P>
-          <button>Add Cart</button>
+        <div class="dish">
+          <figure>
+            <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/special-1.png" alt="/">
+          </figure>
+          <figcaption>
+            <h1>Chicken Veg Pasta </h1>
+            <p>Al dente pasta tossed with chicken strips and a mix of vibrant vegetables in a creamy garlic herb sauce,
+              offering a delightful pasta experience.</p>
+          </figcaption>
+          <div class="buy">
+            <P>15.00$</P>
+            <button>Add Cart</button>
+          </div>
         </div>
-      </div>
 
 
       </div>
@@ -126,7 +134,8 @@
 
       <div class="description_about">
         <h1>We Serve Healthy & Tasty Food </h1>
-        <p>Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore a menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing.</p>
+        <p>Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore a menu curated to
+          balance taste and nutrition, ensuring every bite is both satisfying and nourishing.</p>
         <button>Explore Story</button>
       </div>
 
@@ -181,7 +190,9 @@
       </div>
       <div class="info__chif">
         <h2>Cooked By The Best Chefs In The World</h2>
-        <p>Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary virtuosos brings together expertise, innovation, and passion to create unforgettable dining experiences that redefine gastronomy.</p>
+        <p>Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary virtuosos
+          brings together expertise, innovation, and passion to create unforgettable dining experiences that redefine
+          gastronomy.</p>
         <ul class="chef__list">
           <li>
             <span><i class="fa-solid fa-check"></i></span>
@@ -191,7 +202,7 @@
             <span><i class="fa-solid fa-check"></i></span>
             Experience innovative creations with attention to detail.
           </li>
-          <li >
+          <li>
             <span><i class="fa-solid fa-check"></i></span>
             Enjoy dishes crafted with an unwavering passion for perfection.
           </li>
@@ -199,11 +210,11 @@
       </div>
     </section>
 
-  
+
     <section id="clients">
       <div class="des_client">
-        <h2 >What Our Customers Are Saying</h2>
-        <p >
+        <h2>What Our Customers Are Saying</h2>
+        <p>
           Discover firsthand experiences and testimonials from our valued patrons.
           Explore the feedback and reviews that showcase our commitment to
           quality, service, and customer satisfaction.
@@ -234,7 +245,7 @@
           </p>
         </div>
 
-        
+
 
         <div class="client__card">
           <img src="https://webdesignmastery.github.io/Foodman_17-02-24/assets/client-3.jpg" alt="client" />
@@ -251,10 +262,10 @@
       </div>
 
     </section>
-    
 
 
- 
+
+
     <footer class="footer" id="contact">
       <div class="logo">
         <h1>Speed <span>Food</span></h1>
@@ -293,10 +304,11 @@
       <div class="footer__bar">
         Copyright © 2024 Web Design.
       </div>
-    </footer> 
+    </footer>
 
 
   </main>
-    
+
 </body>
+
 </html>
